@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#navbar{
+    display: flex;
+    gap: 20px;
+    background-color: #272727;
+    padding: 10px;
+    color: coral;
+}
+
+body{
+    background-color:coral;
+    
+}
+
+
+#Home,#About,#Images{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    transition: 0.5s;
+}
+
+#Home:hover,#About:hover,#Images:hover{
+    background-color: coral;
+    scale: 1.1;
+    color: #272727;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#h1{
+    font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    margin-left: -200px;
+}
+
+#me{
+    margin: 50px;
+    margin-top: -100px;
+    position:absolute;
+    border-radius: 50%;
+    border: #272727 solid 5px;
+    box-shadow: 5px 5px 50px black;
+    transition: 0.5s;
+}
+#me:hover{
+    scale: 1.05;
+    transform: translateY(-50px);
+}
+
+#p{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #272727;
+}
+
+#Aboutsec{
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+}
+
+#pdiv{
+    font-size: x-large;;
+    margin-top: 100px;
+    display: inline-block; 
+    text-align: center;
+    background-color: #272727;
+    color: coral;
+    margin-left: 140px;
+    margin-bottom: 200px;
+    padding: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+}
+
+#hello{
+    font-size: xx-large;
+}
+
+#Imagessec{
+    margin-top: 100px;
+    margin-bottom: 300px;
+    text-align: center;
+}
+
+
+
+
+#Btn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #272727;
+    color: coral;
+    transition: 0.4s;
+    position: fixed;
+    margin-top: 700px;
+    margin-left: 1300px;
+    box-shadow: 5px 5px 10px black;
+}
+
+#Btn:hover{
+    scale: 1.1;
+
+}
+

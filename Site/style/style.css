@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: coral;
+}
+#navbar{
+    background-color: #272727;
+    color: coral;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    padding: 8px;
+    transition: 0.6s;
+}
+
+#Home,#About,#Contact{
+    border: 2px solid coral;
+    border-radius: 5px;
+    background-color: coral;
+    color: #272727;
+    transition: 0.6s;
+}
+
+#Home:hover,#About:hover,#Contact:hover{
+    border: 2px solid coral;
+    border-radius: 5px;
+    background-color: #272727;
+    color: coral;
+    scale: 1.2;
+}
+
+
+#img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px black;
+    transition: 0.5s;
+}
+
+#img:hover{
+    transform: translateY(-30px);
+}
+
+#me{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+    margin-right: 100px;
+    border: 10px transparent black;
+    gap: 20px;
+}
+
+#demo{
+    font-family:'Courier New', Courier, monospace;
+    position:inherit;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+
+#myinfo{
+    display: inline-block;
+    margin-top: 100px;
+    border: 5px solid #272727;
+    box-shadow: 6px 6px 6px black;
+    border-radius: 15px;
+    background-color: #272727;
+    color: coral;
+    text-align: center;
+    padding: 75px;
+
+}
+#center{
+    text-align: center;
+}
+
+
+#Hi{
+    font-size: large;
+}
+
+
+#Abouth{
+   text-align: center;
+   margin-top: 300px;
+}
+#Contacth{
+    text-align: center;
+    margin-top: 300px;
+}
+
+#Js{
+   border-radius: 19px;
+   margin-top: 50px;
+   transition: 0.5s;
+   border: 1px solid coral;
+
+}
+#Js1{
+    border-radius: 19px;
+    transition: 0.5s;
+}
+
+#Js:hover{
+    border-radius: 19px;
+    margin-top: 50px;
+    scale: 1.1;
+ }
+ #Js1:hover{
+     border-radius: 19px;
+     scale: 1.1;
+ }
+
+
+
+
+ 
+ .container {
+    width: 300px;
+    display: flex;
+    margin-left: 510px;
+    margin-top: 100px;
+    justify-content: center;
+    background-color: #272727;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+.container h1 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: coral;
+}
+.form-group input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid coral;
+    border-radius: 4px;
+    transition: 0.4s;
+    background-color: coral;
+    color: #272727;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: coral;
+    color: #272727;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.form-group button:hover {
+    background-color: #272727;
+    color: coral;
+    scale: 1.1;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+#footer{
+    background-color: #272727;
+    text-align: center;
+}
+
+#facebook,#dc{
+    cursor: pointer;
+    border-radius: 100%;
+    transition: 0.4s;
+}
+
+
+#dc{
+    margin-bottom: 7px;
+    gap: 100px;
+}
+
+#facebook:hover,#dc:hover{
+  scale: 1.1;
+  transform: translateY(-10px);
+}
+
+
+#btn{
+    position: fixed;
+    display: grid;
+    
+}
+
+
+#btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-areas: 'btn';
+}
+
+#btn button {
+    grid-area: btn;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(140, 214, 216);
+    color: black;
+    transition: 0.5s;
+}
+
+#btn button:hover{
+    scale: 1.1;
+    background-color: cadetblue;
+}
+
+
+
+
+#html{
+    border-radius: 19px;
+    margin-top: 50px;
+    transition: 0.5s;
+    border: 1px solid coral;
+ 
+ }
+ #html1{
+     border-radius: 19px;
+     transition: 0.5s;
+ }
+ 
+ #html:hover{
+     border-radius: 19px;
+     margin-top: 50px;
+     scale: 1.1;
+  }
+  #html1:hover{
+      border-radius: 19px;
+      scale: 1.1;
+  }
+
+
+  #css{
+    border-radius: 19px;
+    margin-top: 50px;
+    transition: 0.5s;
+    border: 1px solid coral;
+ 
+ }
+ #css1{
+     border-radius: 19px;
+     transition: 0.5s;
+ }
+ 
+ #css:hover{
+     border-radius: 19px;
+     margin-top: 50px;
+     scale: 1.1;
+  }
+  #css1:hover{
+      border-radius: 19px;
+      scale: 1.1;
+  }
+ 
+
+  #py{
+    border-radius: 19px;
+    margin-top: 50px;
+    transition: 0.5s;
+    border: 1px solid coral;
+ 
+ }
+ #py1{
+     border-radius: 19px;
+     transition: 0.5s;
+ }
+ 
+ #py:hover{
+     border-radius: 19px;
+     margin-top: 50px;
+     scale: 1.1;
+  }
+  #py1:hover{
+      border-radius: 19px;
+      scale: 1.1;
+  }
+ 
