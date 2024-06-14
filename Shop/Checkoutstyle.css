@@ -1,0 +1,54 @@
+body{
+    background-color: coral;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#Nav-Bar{
+    background-color: coral;
+    padding: 5px;
+    gap: 15px;
+    background-color: #272727;
+}
+
+#img{
+    text-align: end;
+}
+
+#Home,#About,#Contact{
+    text-decoration: none;
+    background-color: #272727;
+    padding: 5px;
+    font-size: large;
+    border-radius: 5px;
+    color: coral;
+    transition: 0.3s;
+}
+
+#Menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+#Home:hover{
+    scale: 1.1;
+    background-color: coral;
+    color: #272727;
+}
+
+#About:hover{
+    scale: 1.1;
+    background-color: coral;
+    color: #272727;
+}
+
+#Contact:hover{
+    scale: 1.1;
+    background-color: coral;
+    color: #272727;
+}

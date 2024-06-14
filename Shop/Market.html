@@ -1,21 +1,50 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="MarketStyle.css">
+    <title>Market</title>
 </head>
 <body>
     <nav id="Nav-Bar">
         <div id="Menu">
             <a href="Home.html" id="Home">Home</a>
             <a href="Market.html" id="About">Market</a>
-            <a href="Contact.html" id="Contact">Contact</a>
+            <div id="cart-container">
+                <a href="Checkout.html"><img src="img/shopping-cart.png" alt="shopping" width="30" id="cart"></a>
+                <span id="items" class="hidden" style="color: #272727;">0</span>
+            </div>
         </div>
-        </nav>
+    </nav>
 
-        
-    
-    <script src="script.js"></script>
+    <div class="grid-container2">
+        <div class="grid-item">
+            <img src="marketimg/cap.jpeg" alt="cap" width="175" height="175" id="img">
+            <button class="addbtn">Add</button>
+        </div>
+        <div class="grid-item">
+            <img src="marketimg/dress.jpeg" alt="dress" width="175" height="175" id="img">
+            <button class="addbtn">Add</button>
+        </div>
+        <div class="grid-item">
+            <img src="marketimg/pants.jpeg" alt="pants" width="175" height="175" id="img">
+            <button class="addbtn">Add</button>
+        </div>
+        <div class="grid-item">
+            <img src="marketimg/Shirt.jpeg" alt="shirt" width="175" height="175" id="img">
+            <button class="addbtn">Add</button>            
+        </div>
+        <div class="grid-item">
+            <img src="marketimg/shoes.jpeg" alt="shoes" width="175" height="175" id="img">
+            <button class="addbtn">Add</button>            
+        </div>
+        <div class="grid-item">
+            <img src="marketimg/watch.webp" alt="watch" width="175" height="175" id="img">
+           <button class="addbtn">Add</button>       
+        </div>
+    </div>
+
+    <script src="Market.js"></script>
 </body>
 </html>

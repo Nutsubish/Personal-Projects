@@ -45,7 +45,7 @@ function goto(sectionId) {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
   }
-  
+                          
   About.addEventListener("click", function() {
     goto("Abouth"); 
   });

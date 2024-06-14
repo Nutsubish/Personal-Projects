@@ -9,7 +9,7 @@ body{
 }
 #Nav-Bar{
     background-color: coral;
-    padding: 10px;
+    padding: 4px;
     gap: 15px;
     background-color: #272727;
 }
@@ -20,7 +20,7 @@ body{
     justify-content: flex-start;
 }
 
-#Home,#About,#Contact{
+#Home,#About{
     text-decoration: none;
     background-color: #272727;
     padding: 5px;
@@ -41,16 +41,11 @@ body{
     color: #272727;
 }
 
-#Contact:hover{
-    scale: 1.1;
-    background-color: coral;
-    color: #272727;
-}
 
 
 .grid-container {
     display: grid;
-    height: 600px;
+    height: 556px;
     align-content: space-evenly;
     grid-template-columns: auto auto auto;
     gap: 100px;
@@ -62,7 +57,7 @@ body{
     background-color: coral;
     text-align: center;
     padding: 5px 5px;
-    height: 150px;
+    height: 140px;
     text-align: center;
     font-size: x-large;
     transition: 0.5s;
@@ -73,17 +68,17 @@ body{
     border-radius: 15px;
     text-align: center;
     padding: 10px 5px;
-    height: 150px;
+    height: 140px;
     text-align: center;
     font-size: x-large;
     transform: translateY(-5px);
   }
 
 #Footer{
-    height: 48px;
+    height: 25px;
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 10px;
     background-color: #272727;
 
 }
@@ -99,4 +94,9 @@ body{
 #fb:hover,#github:hover{
     scale: 1.2;
     transform:translateY(-5px);
+}
+
+
+#item-count{
+    background-color: red;
 }

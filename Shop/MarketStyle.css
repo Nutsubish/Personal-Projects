@@ -1,0 +1,110 @@
+body{
+  background-color: coral;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+#Nav-Bar{
+  background-color: coral;
+  padding: 4px;
+  gap: 15px;
+  background-color: #272727;
+}
+
+
+#Home,#About,#Contact{
+  text-decoration: none;
+  background-color: #272727;
+  padding: 4px;
+  font-size: large;
+  border-radius: 5px;
+  color: coral;
+  transition: 0.3s;
+}
+
+#Menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+#Home:hover{
+  scale: 1.1;
+  background-color: coral;
+  color: #272727;
+}
+
+#About:hover{
+  scale: 1.1;
+  background-color: coral;
+  color: #272727;
+}
+
+#Contact:hover{
+  scale: 1.1;
+  background-color: coral;
+  color: #272727;
+}
+
+
+
+.grid-container2 {
+    display: grid;
+    height: 570px;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace; 
+}
+  
+  .grid-container2 > div{
+    background-color: coral;
+    text-align: center;
+    padding: 5px 5px;
+    height: 150px;
+    text-align: center;
+    font-size: x-large;
+    transition: 0.5s;
+  }
+
+  .grid-container2 > div > button{
+    background-color: #272727;
+    color: coral;
+    border: none;
+    padding: 10px;
+    border-radius: 40%;
+    transition: 0.5s;
+  }
+  .grid-container2 > div > button:hover{
+    scale: 1.2;
+  }
+
+  .grid-container2 > div > button:hover{
+    background-color: coral;
+    color: #272727;
+    border: 1px solid black;
+  }
+
+#img{
+  background-color: #272727;
+  color: coral;
+  border: none;
+  padding: 10px;
+  border-radius: 40%;
+  transition: 0.5s;
+}
+
+#img:hover{
+  scale: 1.1;
+}
+#cart{
+  transition: 0.5s;
+}
+#cart:hover{
+  scale: 1.1;
+}
