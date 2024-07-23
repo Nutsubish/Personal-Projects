@@ -45,7 +45,7 @@ def get_block(size):
     path = join("asset","Terrain","Terrain.png")
     image = pygame.image.load(path).convert_alpha()
     surface = pygame.Surface((size,size),pygame.SRCALPHA,32)
-    rect = pygame.Rect(96,64,size,size)
+    rect = pygame.Rect(96,0,size,size)
     surface.blit(image, (0,0), rect)
     return pygame.transform.scale2x(surface)
 
@@ -54,10 +54,10 @@ def get_block(size):
 class Player(pygame.sprite.Sprite):
     COLOR = (255, 0, 0)
     GRAVITY = 1
-    SPRITES = load_sprite_sheets("Main", "Mask", 32, 32, True)
+    SPRITES = load_sprite_sheets("Main", "Virtual", 32, 32, True)
     ANIMATION_DELAY = 3
 
-    def __init__(self, x, y, width, height):
+    def __init__(self ,x, y, width, height):
         super().__init__()                         
         self.rect = pygame.Rect(x, y, width, height)
         self.x_vel = 0
@@ -72,7 +72,7 @@ class Player(pygame.sprite.Sprite):
         self.jump_count = 0  # initialize jump_count
 
     def jump(self): # for jump and double jumping % gravity for jump
-        self.y_vel = -self.GRAVITY * 9
+        self.y_vel = -self.GRAVITY * 7
         self.animation_count = 0
         self.jump_count += 1      
 
@@ -97,7 +97,7 @@ class Player(pygame.sprite.Sprite):
             self.animation_count = 0
     
     def loop(self, fps):
-        self.y_vel += min(1, (self.fall_count / fps) * self.GRAVITY+0.01) # for gravity
+        self.y_vel += min(1, (self.fall_count / fps) * self.GRAVITY+0.02) # for gravity
         self.move(self.x_vel, self.y_vel)
         
         if self.hit:
@@ -108,7 +108,7 @@ class Player(pygame.sprite.Sprite):
         
         self.fall_count += 1
         self.update_sprite()
-        self.update()  # Ensure this is called in the loop
+        self.update()  
     
     def landed(self):
         self.fall_count = 0
@@ -128,7 +128,7 @@ class Player(pygame.sprite.Sprite):
                 sprite_sheet = "jump"
             elif self.jump_count == 2:
                 sprite_sheet = "double_jump"
-        elif self.y_vel > self.GRAVITY: #Note
+        elif self.y_vel > self.GRAVITY: 
             sprite_sheet = "fall"
         if self.x_vel != 0:
            sprite_sheet = "run"
@@ -317,7 +317,7 @@ def main_menu(window):
 
 def main(window):
     clock = pygame.time.Clock()
-    background, bg_image = get_background("Green.png")
+    background, bg_image = get_background("Purple.png")
 
     block_size = 96
     player = Player(100, 100, 50, 50)
@@ -334,8 +334,6 @@ def main(window):
     floor = [Block(i * block_size, HEIGHT - block_size, block_size) 
              for i in range(-WIDTH // block_size , (WIDTH * 2) // block_size)]
 
-    randomnums = random.randint(2,6)
-    randomnums1 = random.randint(2,6)
 
     objects = [*floor, Block(0, HEIGHT - block_size * 2, block_size),
                Block(block_size * 2, HEIGHT - block_size * 3, block_size),

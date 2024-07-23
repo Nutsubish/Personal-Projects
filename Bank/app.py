@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_secret_key'
+app.config['SECRET_KEY'] = 'nikoloznutsubidze'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
@@ -72,7 +72,7 @@ def register():
         
         hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
         new_user = User(username=username, password=hashed_password)
-        db.session.add(new_user)
+        db.session.add(new_user) # to add user in session
         db.session.commit()
         flash('Registration successful. Please log in.', 'success')
         return redirect(url_for('login'))
@@ -188,7 +188,7 @@ def get_transactions(user_id):
     sent_transactions = Friendship.query.filter_by(user_id=user_id).all()
     received_transactions = Friendship.query.filter_by(friend_id=user_id).all()
 
-    # Iterate over sent transactions
+    
     for friendship in sent_transactions:
         friend = User.query.get(friendship.friend_id)
         if friend:
@@ -217,3 +217,7 @@ if __name__ == '__main__':
     with app.app_context():
         db.create_all()
     app.run(debug=True)
+
+
+
+
